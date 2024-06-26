@@ -1,0 +1,83 @@
+.wishlistHeader {
+  width: 100%;
+  text-align: center;
+  margin: 4rem 0;
+}
+.wishList-container {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  margin: 4rem 0;
+  flex-wrap: wrap;
+  .wishList-data {
+    width: 21%;
+    height: 30rem;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    overflow: hidden;
+    color: white;
+    :nth-child(1) {
+      overflow: hidden;
+      width: 100%;
+      height: 80%;
+      img {
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      }
+    }
+    .textData {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-inline: 0.5rem;
+      .textBox {
+        width: 80%;
+        height: 100%;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: center;
+        padding-block: 0.5rem;
+      }
+      .iconBox {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        span {
+          cursor: pointer;
+          svg {
+            width: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .wishList-container {
+    gap: 1.5rem;
+    margin: 2rem 0;
+    .wishList-data {
+      width: 80%;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .wishList-container {
+    gap: 1.5rem;
+    margin: 2rem 0;
+    .wishList-data {
+      width: 40%;
+    }
+  }
+}
